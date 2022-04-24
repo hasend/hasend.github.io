@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List!</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrap">
+        <div id="nintendo">
+        <div id="top">
+            <div class="top-left"></div>
+            <div class="top-center">
+                <div class="screen">
+                    <div id="out-screen" class="hidden">
+                        <img src="img/todo.png">
+                    </div>
+                    <div id="topmenu">
+                        <div id="clock" class="hidden">00:00:00</div>
+                        <div id="weather" class="hidden">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul id="todo-list" class="hidden"></ul>
+                </div>
+            </div>
+            <div class="top-right"></div>
+        </div>
+        <div id="middle">
+            <img src="img/logo.png">
+        </div>
+        <div id="bottom">
+            <div class="bottom-left">
+                <img src="img/rightBtn.png" id="btn">
+                <div id="login-icon" class="hidden">
+                    <img src="img/login.png">
+                </div>
+                <div id="logout-icon" class="hidden">
+                    <img src="img/logout.png">
+                </div>
+            </div>
+            <div class="bottom-center">
+                <div class="screen">
+                    <form id="login-form" class="hidden">
+                        <img src="img/icon.png">
+                        <input type="text" placeholder="What is your name?" required >
+                        <button>Log In</button>
+                    </form>
+                    <form id="todo-form" class="hidden">
+                        <input type="text" placeholder="Write a To Do and Press Enter" required>
+                        <img src="img/icon2.png">
+                    </form>
+                    <h1 class="hidden" id="greeting"></h1>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <div id="arrowbtn">
+                    <img src="img/arrowBtn.png" id="btn1">
+                    <img src="img/arrowBtn.png" id="btn2">
+                    <img src="img/arrowBtn.png" id="btn3">
+                    <img src="img/arrowBtn.png" id="btn4">
+                </div>
+                <div id="bar"></div>
+                <div id="bar"></div>
+            </div>            
+        </div>
+        </div>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

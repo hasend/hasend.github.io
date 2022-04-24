@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=DotGothic16&family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+.hidden {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: #f6d0ee;
+  }
+    
+::-webkit-scrollbar-thumb {
+    background: #6cd8ff;
+    border-radius: 15px;
+  }
+
+::selection {
+    background: #ed54c0;
+    color: #fff;
+ }
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#nintendo {
+    width: 1024px;
+    height: 974px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-0.5%);
+}
+
+@import "top.css";
+@import "middle.css";
+@import "bottom.css";
+@import "login-form.css";
+@import "mu.css";
+@import "todo.css";
+@import "screen.css";

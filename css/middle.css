@@ -1,0 +1,13 @@
+#middle {
+    width: 1024px;
+    height: 76px;
+    clear: both;
+    background-image: url(../img/middle.png);
+    /*line-height: 76pt;*/
+}
+
+#middle img {
+    display:block; 
+    margin:auto;
+    padding-top: 22px;
+}
