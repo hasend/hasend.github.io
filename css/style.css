@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=DotGothic16&family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+.hidden {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: #f6d0ee;
+  }
+    
+::-webkit-scrollbar-thumb {
+    background: #6cd8ff;
+    border-radius: 15px;
+  }
+
+::selection {
+    background: #ed54c0;
+    color: #fff;
+ }
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#nintendo {
+    width: 1024px;
+    height: 974px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-0.5%);
+}
+
+/*top*/
+
+#top {
+    display: flex;
+    height: 441px;
+}
+
+.top-left {
+    width: 217px;
+    background-image: url(../img/top-left.png);
+}
+
+.top-center {
+    width: 58%;
+    background-image: url(../img/top-center.png);
+    margin-left: -1px;
+}
+
+.top-right {
+    width: 217px;
+    background-image: url(../img/top-right.png);
+    margin-left: -1px;
+}
+
+.screen #out-screen {
+    position: absolute;
+    top: 70px;
+    left: 31px;
+}
+
+.screen {
+    position: relative;
+    width: 539px;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(../img/screen.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*middle*/
+
+#middle {
+    width: 1024px;
+    height: 76px;
+    clear: both;
+    background-image: url(../img/middle.png);
+    /*line-height: 76pt;*/
+}
+
+#middle img {
+    display:block; 
+    margin:auto;
+    padding-top: 22px;
+}
+
+/*bottom*/
+
+#bottom {
+    display: flex;
+    width: 1024px;
+    height: 447px;
+}
+
+.bottom-left {
+    width: 217px;
+    background-image: url(../img/bottom-left.png);
+    margin-left: -1px;
+    position: relative;
+}
+
+.bottom-center {
+    width: 58%;
+    background-image: url(../img/bottom-center.png);
+    margin-left: -1px;
+}
+
+.bottom-right {
+    width: 217px;
+    background-image: url(../img/bottom-right.png);
+}
+
+.bottom-left>img {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.bottom-left #login-icon{
+    position: absolute;
+    top: 275px;
+    left: 74px;
+}
+
+.bottom-left #logout-icon{
+    position: absolute;
+    top: 275px;
+    left: 56px;
+}
+
+/*login-form*/
+
+#login-form {
+    position: relative;
+}
+
+#login-form img {
+    position: absolute;
+    top: 120px;
+    left: 213px;
+    animation:icon 1s infinite alternate;  
+}
+
+@keyframes icon{
+    0%{transform:translate(0,0);}
+    100%{transform:translate(0,5px);}
+ }  
+
+#login-form input {
+    position: absolute;
+    top: 220px;
+    left: 110px;
+    width: 300px;
+    height: 50px;
+    border : 4px solid #53006d;
+    background: transparent;
+    font-size: 30px;
+    text-align:center;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#login-form button {
+    position: absolute;
+    top: 280px;
+    left: 180px;
+    width: 150px;
+    height: 50px;
+    border : 4px solid #53006d;
+    background-color: #efaedc;
+    font-size: 30px;
+    text-align:center;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 800;
+    color: #53006d;
+}
+
+#login-form input:lang(ko) {font-family: 'Do Hyeon', sans-serif;}
+
+/*mu*/
+.bottom-right #arrowbtn {
+    position: relative;
+}
+
+#arrowbtn #btn1{
+    position: absolute;
+    transform: rotate( 180deg );
+    top: 140px;
+}
+
+#arrowbtn #btn2{
+    position: absolute;
+    transform: rotate( 270deg );
+    left: 55px;
+    top: 80px;
+}
+
+#arrowbtn #btn3{
+    position: absolute;
+    top: 140px;
+    left: 110px;
+}
+
+#arrowbtn #btn4{
+    position: absolute;
+    transform: rotate( 90deg );
+    left: 55px;
+    top: 200px;
+}
+
+.bottom-right #bar {
+    position: relative;
+    top: 300px;
+    left: -5px;
+    width: 191px;
+    height: 30px;
+    background-image: url(../img/barBg.png);
+    margin-bottom: 20px;
+}
+
+/*todo*/
+
+#greeting {
+    position: absolute;
+    top: 90px;
+    left: 34%;
+    text-align:center;
+    color: #53006d;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#todo-form {
+    position: relative;
+}
+
+#todo-form input {
+    position: absolute;
+    top: 210px;
+    left: 65px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-bottom : 4px solid #53006d;
+    background: transparent;
+    font-size: 25px;
+    text-align:center;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#todo-form img {
+    position: absolute;
+    top: 285px;
+    left: 233px;
+    animation:icon 1s infinite alternate;  
+}
+
+#todo-list {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    list-style: none;
+    width: 465px;
+    height: 255px;
+    margin-left: 35px;
+    padding: 0;
+    overflow: auto;
+}
+
+#todo-list li {
+    width: 442px;
+    height: 76px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #53006d;
+    background-image: url(../img/lidesign.png);
+    padding: 20px 20px 10px 93px;
+}
+
+/*screen*/
+
+#topmenu{
+    width: 480px;
+    margin-left: 30px;
+    padding-top: 73px;
+}
+
+#weather {
+    float: left;
+    height: 30px;
+    width: 80%;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: 'DotGothic16', sans-serif;
+    color: #53006d;
+    padding-left: 10px;
+    border-bottom : 4px solid #53006d;
+}
+
+#clock {
+    float: right;
+    height: 30px;
+    width: 20%;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: 'DotGothic16', sans-serif;
+    color: #53006d;
+    padding-right: 10px;
+    border-bottom : 4px solid #53006d;
+}
+
+#todo-list {
+    clear: both;
+}
