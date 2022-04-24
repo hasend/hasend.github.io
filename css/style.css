@@ -46,7 +46,7 @@ body{
     transform: translate(-50%,-0.5%);
 }
 
-/**/
+/*top*/
 
 #top {
     display: flex;
@@ -86,7 +86,7 @@ body{
     background-repeat: no-repeat;
 }
 
-/**/
+/*middle*/
 
 #middle {
     width: 1024px;
